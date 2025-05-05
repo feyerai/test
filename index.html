@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电动自行车选购完全指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .highlight {
+            position: relative;
+            z-index: 1;
+        }
+        .highlight:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(74, 222, 128, 0.3);
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+        .highlight:hover:after {
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">电动自行车<span class="text-green-600">选购完全指南</span></h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">安全、实用、合规的全面选购策略 · 基于最新行业规范整理</p>
+            <div class="mt-6 flex justify-center">
+                <div class="w-24 h-1 bg-green-500 rounded-full"></div>
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <section class="mb-12 bg-white rounded-xl p-6 card">
+            <div class="flex items-start">
+                <div class="mr-4 text-green-500">
+                    <i class="fas fa-info-circle text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">选购核心原则</h2>
+                    <p class="text-gray-600">购买电动自行车时，需综合考虑<span class="font-medium text-green-600">安全性、实用性、售后保障</span>以及<span class="font-medium text-green-600">政策合规性</span>。本指南将帮助您系统化评估需求，避开常见陷阱，选择最适合的车型。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1 -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-3 h-8 bg-green-500 rounded-full mr-3"></div>
+                <h2 class="text-2xl font-bold text-gray-800">一、选购前的准备</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-bullseye text-green-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">明确需求</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">用途：</span>通勤代步、短途配送或家用载人？不同需求影响车型选择</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">续航：</span>根据每日里程选择电池容量（48V12Ah续航约35-40km）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">政策合规：</span>确认当地政策，优先选择符合新国标的车型</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-wallet text-blue-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">预算规划</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">入门级（2000-3000元）</h4>
+                            <p class="text-gray-600 text-sm">铅酸电池车型，适合短途通勤（如雅迪米彩、绿源MHJ2）</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-1">中高端（3000-5000元）</h4>
+                            <p class="text-gray-600 text-sm">锂电池或石墨烯电池，续航更长（如雅迪冠能T5、九号N70C）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-3 h-8 bg-blue-500 rounded-full mr-3"></div>
+                <h2 class="text-2xl font-bold text-gray-800">二、核心选购要点</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-red-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">安全与合规</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-red-500 mt-1 mr-2"></i>
+                            <span>必须认准车身上的<span class="font-medium">3C认证</span>标志</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-battery-three-quarters text-red-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">电池类型：</span>铅酸电池（安全低价）或锂电池（轻便长续航）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-bolt text-red-500 mt-1 mr-2"></i>
+                            <span>新国标要求<span class="font-medium">电池电压≤48V</span>，改装属违法</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-cogs text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">关键配置</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-cog text-yellow-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">电机：</span>无刷电机更高效（800W-1200W）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-brake-warning text-yellow-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">刹车系统：</span>前碟后鼓组合兼顾成本与制动效果</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-tire text-yellow-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">轮胎：</span>真空胎防爆，液压减震提升舒适性</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-store text-purple-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">品牌与售后</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-medal text-purple-500 mt-1 mr-2"></i>
+                            <span>优先<span class="font-medium">一线品牌</span>（雅迪、爱玛、绿源等）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-calendar-check text-purple-500 mt-1 mr-2"></i>
+                            <span>检查<span class="font-medium">生产日期</span>（避开6-7月雨季生产）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-tools text-purple-500 mt-1 mr-2"></i>
+                            <span><span class="font-medium">线下渠道</span>优势：可试驾、验车，售后响应更快</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-3 h-8 bg-purple-500 rounded-full mr-3"></div>
+                <h2 class="text-2xl font-bold text-gray-800">三、验车与交易注意事项</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-clipboard-check text-indigo-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">验车流程</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-2 mt-1 flex-shrink-0">
+                                <span class="text-indigo-500 text-xs font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">外观检查</h4>
+                                <p class="text-gray-600 text-sm">车漆无划痕、焊接点平整、螺丝无松动</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-2 mt-1 flex-shrink-0">
+                                <span class="text-indigo-500 text-xs font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">功能测试</h4>
+                                <p class="text-gray-600 text-sm">灯光、刹车、仪表盘、充电接口是否正常</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-2 mt-1 flex-shrink-0">
+                                <span class="text-indigo-500 text-xs font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-700">电池验证</h4>
+                                <p class="text-gray-600 text-sm">核对电池型号与合格证一致，无鼓包或漏液</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-file-invoice-dollar text-pink-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">交易细节</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-receipt text-pink-500 mt-1 mr-2"></i>
+                            <span>索要<span class="font-medium">发票、合格证、保修卡</span>（上牌必需）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-gift text-pink-500 mt-1 mr-2"></i>
+                            <span>争取<span class="font-medium">头盔、雨衣、防盗险</span>等赠品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-file-contract text-pink-500 mt-1 mr-2"></i>
+                            <span>明确<span class="font-medium">保修条款</span>（电池、电机等核心部件）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 & 5 -->
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <!-- Section 4 -->
+            <section>
+                <div class="flex items-center mb-6">
+                    <div class="w-3 h-8 bg-yellow-500 rounded-full mr-3"></div>
+                    <h2 class="text-2xl font-bold text-gray-800">四、使用与维护建议</h2>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fas fa-charging-station text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-1">充电安全</h3>
+                                <p class="text-gray-600">使用原装充电器，避免过充（≤10小时），禁止室内/楼道充电</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fas fa-tools text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-1">定期保养</h3>
+                                <p class="text-gray-600">每半年检查一次线路和刹车，及时更换老化部件</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                <i class="fas fa-lock text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800 mb-1">防盗措施</h3>
+                                <p class="text-gray-600">加装防盗器、GPS定位，停车时锁好电池仓</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section>
+                <div class="flex items-center mb-6">
+                    <div class="w-3 h-8 bg-red-500 rounded-full mr-3"></div>
+                    <h2 class="text-2xl font-bold text-gray-800">五、避坑总结</h2>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 card">
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-red-600 mb-2 flex items-center">
+                                <i class="fas fa-times-circle mr-2"></i> 不推荐购买
+                            </h3>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>黄色电动车（易显旧）</li>
+                                <li>48V12Ah小车（续航短）</li>
+                                <li>杂牌低价车（质量差）</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-green-600 mb-2 flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> 推荐选择
+                            </h3>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>石墨烯铅酸电池（性价比高）</li>
+                                <li>智能车型（如九号支持APP控车）</li>
+                                <li>一线品牌热门型号</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Conclusion -->
+        <section class="bg-white rounded-xl p-6 card mb-12">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">系统化选购策略</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">通过以上步骤，可大幅降低选购风险。建议优先考虑雅迪、绿源、小牛等品牌的热门型号，并根据个人需求选择适合的配置。</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-200">
+            <p>网页由问小白生成，仅供参考</p>
+            <p class="mt-1">最后更新时间为2025-05-05，星期一</p>
+            <p class="mt-1">wenxiaobai.com</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove('lazy');
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img.lazy').forEach(lazyImage => {
+                lazyImageObserver.observe(lazyImage);
+            });
+        }
+    </script>
+</body>
+</html>
